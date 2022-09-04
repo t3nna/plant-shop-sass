@@ -1,0 +1,85 @@
+@use '../abstracts/variables';
+// Intro
+
+
+.intro{
+  color: variables.$clr-header-100;
+  justify-self: center;
+  max-width: 32ch;
+  text-align: center;
+
+  span{
+    color: variables.$clr-header-200;
+  }
+}
+
+main{
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.service-desc{
+
+  .container{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  span{
+    color: variables.$clr-accent-300;
+
+  }
+
+  p{
+    max-width: 37ch;
+    padding-top: 1rem;
+  }
+
+  button{
+    justify-self: center;
+  }
+}
+
+
+//
+
+.plants-list{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+
+  li{
+    position: relative;
+  }
+  img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    border-radius: 1rem;
+  }
+  .img-overlap{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 1rem;
+    background-color: rgb(0 0 0 / .15);
+
+  }
+  a{
+    display: grid;
+    gap: 5rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+

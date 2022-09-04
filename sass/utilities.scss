@@ -1,0 +1,105 @@
+@use 'abstracts/variables';
+@use 'base/typo';
+
+.container{
+
+
+  width: min(variables.$global-max-width, 100% - (variables.$global-padding * 2));
+  margin-inline: auto;
+}
+
+.flow * + *{
+  margin-top: var(--flow-spacer, 3rem)
+}
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.text-accent-400 {
+  color: var(--clr-accent-400);
+}
+
+.text-accent-100 {
+  color: var(--clr-accent-100);
+}
+
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+
+.text-neutral-900 {
+  color: var(--clr-neutral-900);
+}
+
+.bg-primary-400 {
+  background-color: var(--clr-primary-400);
+}
+
+.bg-accent-400 {
+  background-color: var(--clr-accent-400);
+}
+
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+
+.bg-neutral-100 {
+  background-color: var(--clr-neutral-100);
+}
+
+.bg-neutral-900 {
+  background-color: var(--clr-neutral-900);
+}
+
+.fw-bold {
+  font-weight: typo.$fw-bold;
+}
+
+.fw-black {
+  font-weight: typo.$fw-black;
+}
+
+.fw-regular {
+  font-weight: typo.$fw-regular;
+}
+
+.fs-primary-heading {
+  font-size: typo.$fs-primary-heading;
+  line-height: 1.1;
+}
+
+.fs-secondary-heading {
+  font-size: typo.$fs-secondary-heading;
+  line-height: 1.1;
+}
+
+.fs-third-heading {
+  font-size: typo.$fs-third-heading;
+  line-height: 1.1;
+}
+
+
+
+.fs-400 {
+  font-size: typo.$fs-400;
+}
+
+.fs-500 {
+  font-size: typo.$fs-500;
+}
+
+.fs-600 {
+  font-size: typo.$fs-600;
+}
+
+.fs-700 {
+  font-size: typo.$fs-700;
+}
+.fs-800 {
+  font-size: typo.$fs-800;
+}
+
+.fs-900 {
+  font-size: typo.$fs-900;
+}

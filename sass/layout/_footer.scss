@@ -1,0 +1,17 @@
+@use '../base/typo';
+@use '../abstracts/variables';
+
+
+footer{
+  margin-top: 2rem;
+  background-color: variables.$clr-accent-500;
+  //color: variables.$clr-accent-100;
+  color: white;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.partners-list{
+  columns: 2;
+
+}

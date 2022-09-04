@@ -1,0 +1,37 @@
+@use '../base/typo';
+@use '../abstracts/variables';
+
+.btn{
+  display: inline-flex;
+  padding: .25em 1em;
+  background-color: variables.$clr-accent-200;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 10px 12px -4px rgb(0 0 0 /.1);
+  font-size: typo.$fs-400;
+  font-weight: typo.$fw-bold;
+  cursor: pointer;
+}
+
+.btn[data-type="transparent"]{
+  color: variables.$clr-accent-100;
+  border: 1px solid variables.$clr-accent-100;
+  box-shadow: none;
+  background-color: rgba(variables.$clr-accent-500, .5);
+  backdrop-filter: blur(8px) saturate(100%) contrast(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+.btn[data-type="accent"]{
+  background-color: variables.$clr-accent-500;
+  color: variables.$clr-header-100;
+  padding: 0.5em 1.75em;
+  border-radius: 50rem;
+
+  &:where(:hover, :focus){
+    background-color: variables.$clr-accent-200;
+    color: variables.$clr-accent-500;
+
+  }
+}
+

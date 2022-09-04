@@ -1,0 +1,15 @@
+@use 'typo' as typo;
+
+:root{
+
+  --ff-body: typo.$ff-primary;
+  --ff-heading: typo.$ff-primary;
+
+  --fs-primary-heading: typo.$fs-900;
+  --fs-secondary-heading: typo.$fs-800;
+  --fs-third-heading: typo.$fs-700;
+  --fs-body: typo.$fs-400;
+
+  --fs-buttons: typo.$fs-600;
+
+}
