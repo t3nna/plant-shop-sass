@@ -4,6 +4,7 @@
 
 footer{
   margin-top: 2rem;
+  padding: 1.5rem 0;
   background-color: variables.$clr-accent-500;
   //color: variables.$clr-accent-100;
   color: white;
@@ -11,7 +12,31 @@ footer{
   border-top-right-radius: 1.25rem;
 }
 
+
+.footer-email{
+  font-weight: typo.$fw-bold;
+  color: white;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.social-links{
+  display: flex;
+  gap: 1.5rem;
+
+}
+
+.social-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
 .partners-list{
   columns: 2;
+  text-align: center;
+//align-self: center;
+}
+
+@media (min-width: 40em){
 
 }
