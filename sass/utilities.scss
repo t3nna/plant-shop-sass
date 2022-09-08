@@ -8,7 +8,7 @@
   margin-inline: auto;
 }
 
-.flow * + *{
+.flow > * + *{
   margin-top: var(--flow-spacer, 3rem)
 }
 

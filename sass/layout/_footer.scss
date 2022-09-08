@@ -2,8 +2,9 @@
 @use '../abstracts/variables';
 
 
-footer{
+footer {
   margin-top: 2rem;
+  padding: 1.5rem 0;
   background-color: variables.$clr-accent-500;
   //color: variables.$clr-accent-100;
   color: white;
@@ -11,7 +12,84 @@ footer{
   border-top-right-radius: 1.25rem;
 }
 
-.partners-list{
+.footer-wrapper{
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.footer-email {
+  font-weight: typo.$fw-bold;
+  color: white;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 3px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+
+}
+
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.partners-list {
   columns: 2;
+  text-align: center;
+  //align-self: center;
+}
+
+.footer-img {
+  position: relative;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5rem;
+    margin-inline: auto;
+  }
+  p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 40em) {
+  .footer-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+    &>*:last-child{
+      align-self: center;
+      justify-self: center;
+    }
+
+  }
+
+  .footer-img img{
+    max-width: min(400px, 100%);
+
+  }
+  .partners-list{
+    align-self: center;
+    font-size: typo.$fs-500;
+  }
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #e8eaec;
+
 
 }
